@@ -8,4 +8,4 @@ images:
   - name: ethereum/go-client
     newTag: v1.13.14
   - name: gcr.io/prysmaticlabs/prysm/beacon-chain
-    newTag: v5.0.2
+    newTag: v5.0.3

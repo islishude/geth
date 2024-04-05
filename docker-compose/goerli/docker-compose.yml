@@ -47,7 +47,7 @@ services:
     volumes:
       - ${PRYSM_DATADIR:-/data/prysm}:/genesis
   prysm:
-    image: gcr.io/prysmaticlabs/prysm/beacon-chain:v5.0.2
+    image: gcr.io/prysmaticlabs/prysm/beacon-chain:v5.0.3
     restart: unless-stopped
     stop_grace_period: 2m
     volumes:

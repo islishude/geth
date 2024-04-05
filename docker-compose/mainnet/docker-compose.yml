@@ -37,7 +37,7 @@ services:
         max-size: "50m"
         max-file: "10"
   prysm:
-    image: gcr.io/prysmaticlabs/prysm/beacon-chain:v5.0.2
+    image: gcr.io/prysmaticlabs/prysm/beacon-chain:v5.0.3
     restart: unless-stopped
     stop_grace_period: 2m
     volumes:
