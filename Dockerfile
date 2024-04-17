@@ -2,7 +2,7 @@
 FROM golang:1.22.2 as BUILDER
 RUN apt update && apt install -y build-essential git
 WORKDIR /geth
-ARG VERSION=v1.13.14
+ARG VERSION=v1.13.15
 RUN git clone --quiet --branch ${VERSION} --depth 1 https://github.com/ethereum/go-ethereum .
 RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build go run build/ci.go install -static ./cmd/geth
 
